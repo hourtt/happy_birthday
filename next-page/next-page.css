@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+body {
+    background: linear-gradient(90deg, #b77073, #f47f5e, #470c36);
+    background-size: 200% 150%;
+    animation: gradientBG 10s ease infinite;
+}
+   /* Text scale and fade-in animation */
+.scale-fade-in {
+    opacity: 0;
+    transform: scale(0.5);
+    animation: scaleFadeIn 1.5s ease-out forwards;
+    animation-delay: 0.5s;
+}
+
+/* Floating animations */
+.floating {
+    animation: float 2s ease-in-out infinite;
+}
+
+.floating-delay {
+    animation: float 3s ease-in-out infinite;
+    animation-delay: 1s;
+}
+.paragraph{
+    text-align: center;
+    display: flex;
+    margin: 0 auto;
+    font-size: 20px;
+}
+.card-container{
+    padding:20px;
+    display:flex;
+    flex-wrap: wrap;
+    gap:10px;
+    max-width:700px;
+    max-height:700px;
+    margin:0 auto;
+}
+.gifcard{
+    margin:0 auto;
+    padding:20px;
+    display:flex;
+    gap:10px;
+    max-width:700px;
+    max-height:700px;
+}
+.banner{
+    max-width: 500px;
+    max-height:1000px;
+    border-radius: 12px;
+    margin: 0px 0px 0px 15px;
+    display: flex;
+    padding: 10 0 0 10px;
+}
+.gif{
+   margin:7px;
+   border-radius: 10px;
+}
+.card {
+    flex: 1 1 calc(25% - 10px); /*Four cards per row*/
+    /* background: #fff; */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.card:active{
+    transform: scale(0.95);
+    background-color:rgb(21, 146, 58);
+    box-shadow:inherit;
+}
+
+@keyframes scaleFadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+  @keyframes float {
+    0%{ transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+@keyframes slideIn {
+    0% { opacity: 0; transform: translateX(-100%); }
+    100% { opacity: 1; transform: translateX(0); }
+}

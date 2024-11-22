@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Celebration</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="next-page.css">
+</head>
+<body class="main-page">
+    <!--* Floating balloons and decorations *-->
+    <div id="decorative-images">
+        <img src="../images/birthday-kit/birthday-balloon.png" alt="Balloon" class="fixed left-8 top-2/4 w-32 h-32 object-contain z-10 floating">
+        <img src="../images/birthday-kit/birthday-balloon.png" alt="Balloon" class="fixed right-10 top-2/4 w-32 h-32 object-contain z-10 floating">
+        <img src="../images/birthday-kit/birthday-cake.png" alt="Cake" class="absolute bottom-10 left-10 w-40 h-40 object-contain floating">
+        <img src="../images/birthday-kit/birthday-cake.png" alt="Gift" class="absolute bottom-10 right-10 w-50 h-40 object-contain floating">
+    </div>
+
+    <!--* Birthday greeting *-->
+    <div id="celebration-page" class="text-center mt-20">
+        <h1 class="text-6xl md:text-8xl font-bold text-white glow-text scale-fade-in">
+            Happy Birthday!
+        </h1>
+        <p class="text-xl text-white mt-4 scale-fade-in" style="animation-delay: 1s;">
+            Wishing you a day filled with love, joy, and unforgettable moments!
+        </p>
+    </div>
+    <!--* Card Container*-->
+    <div class="card-container">
+        <div class="card" data-url="../pages/page1.html">First Card</div>
+        <div class="card" data-url="../pages/page2.html">Second Card</div>
+ 
+    </div>
+
+    <!-- *Gif Container* -->
+    <div class="gifcard">
+        <div >
+            <img class="gif" src="../images/gif/HBD.jpg" alt="cat.gif">
+            <img class="gif" src="../images/gif/me.jpg" alt="cat.jpg" srcset="">
+           
+            <img class="gif" src="../images/gif/HBD.jpg" alt="cat.gif">
+            <img class="gif" src="../images/gif/me.jpg" alt="cat.jpg" srcset="">
+           
+        </div>
+        <div >
+            <img class="banner" src="../images/gif/Happy Birthday!.jpg" alt="banner.jpg" srcset="">
+        </div>
+        <div>
+            <img class="gif" src="../images/gif/me.jpg" alt="cat.jpg" srcset="">
+            <img class="gif" src="../images/gif/HBD.jpg" alt="cat.gif">
+            <img class="gif" src="../images/gif/me.jpg" alt="cat.jpg" srcset="">
+            <img class="gif" src="../images/gif/HBD.jpg" alt="cat.gif">
+           
+        </div>
+    </div>
+
+<script src="next-page.js"></script>
+
+</body>
+</html>
